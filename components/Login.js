@@ -35,7 +35,7 @@ function Login({ providers }) {
                 Welcome fren,
               </h2>
               <button
-                className="relative inline-flex items-center justify-start px-9 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
+                className="mb-4 relative inline-flex items-center justify-start px-9 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
                 onClick={() => signIn(provider.id, { callbackUrl: "/" })}
               >
                 <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#0567a6] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
@@ -43,7 +43,10 @@ function Login({ providers }) {
                   Enter <span className="font-bold">mods.social</span>
                 </span>
               </button>
-              <h4 className="underline" onClick={onResumeClick}>
+              <h4
+                className="underline hover:no-underline	hover:cursor-pointer"
+                onClick={onResumeClick}
+              >
                 Learn more
               </h4>
             </div>

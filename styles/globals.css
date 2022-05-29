@@ -5,8 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Press+Start+2P&family=Source+Code+Pro:wght@200&display=swap');
 @layer base {
   body {
-    background-image: url(../static/background.png);
-    background-position: center;
+    background: url(../static/background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     text-shadow: 0.3px 0.3px #ffffff;
     @apply bg-transparent;
