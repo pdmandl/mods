@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HomeIcon } from "@heroicons/react/solid";
+import { HomeIcon, PencilAltIcon } from "@heroicons/react/solid";
 import {
   HashtagIcon,
   BellIcon,
@@ -28,9 +28,10 @@ function Sidebar() {
         <SidebarLink text="Notifications" Icon={BellIcon} />
         <SidebarLink text="Messages" Icon={InboxIcon} />
         <SidebarLink text="Profile" Icon={UserIcon} />
-        <button className="hidden xl:inline ml-auto bg-transparent hover:text-white rounded-full w-56 h-[52px] text-lg font-bold hover:bg-[#0567a6]">
-          PUBLISH
-        </button>
+        <div className="text-[#d9d9d9] flex items-center justify-center xl:justify-start text-xl space-x-3 w-[52px] h-[52px] xl:w-auto xl:h-auto xl:py-3 xl:px-4 transition hover:text-white rounded-full hover:bg-[#0567a6]">
+          <PencilAltIcon className="h-7 text-black" />
+          <span className="hidden xl:inline text-black">Publish</span>
+        </div>
       </div>
       <div
         className="text-black shadow-md  flex items-center bg-white rounded-xl border border-black justify-center mt-auto hoverAnimation xl:ml-auto xl:-mr-5"
