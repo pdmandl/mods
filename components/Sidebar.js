@@ -19,21 +19,21 @@ function Sidebar() {
 
   return (
     <div className="hidden sm:flex flex-col items-center xl:items-start xl:w-[340px] p-2 fixed h-full">
-      <div className="space-y-2.5 mt-4 mb-2.5 xl:ml-24">
-        <div className="text-black flex items-center justify-center xl:justify-start text-xl space-x-3 hoverAnimation">
-          mods<span className="hidden xl:inline">.social</span>
-        </div>
+      <div className="text-black flex items-center xl:ml-24 justify-center xl:justify-start text-xl space-x-3 hoverAnimation">
+        mods<span className="hidden xl:inline">.social</span>
+      </div>
+      <div className="space-y-2.5 mb-2.5 xl:ml-24 xl:mt-7 bg-white shadow-md rounded-xl border border-black">
         <SidebarLink text="Home" Icon={HomeIcon} active />
         <SidebarLink text="Explore" Icon={HashtagIcon} />
         <SidebarLink text="Notifications" Icon={BellIcon} />
         <SidebarLink text="Messages" Icon={InboxIcon} />
         <SidebarLink text="Profile" Icon={UserIcon} />
+        <button className="hidden xl:inline ml-auto bg-transparent hover:text-white rounded-full w-56 h-[52px] text-lg font-bold hover:bg-[#0567a6]">
+          PUBLISH
+        </button>
       </div>
-      <button className="hidden xl:inline ml-auto bg-[#1d9bf0] text-white rounded-full w-56 h-[52px] text-lg font-bold shadow-md hover:bg-[#1a8cd8]">
-        PUBLISH
-      </button>
       <div
-        className="text-[#d9d9d9] flex items-center justify-center mt-auto hoverAnimation xl:ml-auto xl:-mr-5"
+        className="text-black shadow-md  flex items-center bg-white rounded-xl border border-black justify-center mt-auto hoverAnimation xl:ml-auto xl:-mr-5"
         onClick={signOut}
       >
         <img

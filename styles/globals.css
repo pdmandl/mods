@@ -5,8 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Press+Start+2P&family=Source+Code+Pro:wght@200&display=swap');
 @layer base {
   body {
-    @apply bg-white;
+    background-image: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    text-shadow: 0.3px 0.3px #ffffff;
+    @apply bg-transparent;
     @apply font-source;
+    @apply text-black;
   }
 }
 

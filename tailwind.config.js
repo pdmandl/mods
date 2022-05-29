@@ -8,6 +8,9 @@ module.exports = {
         inconsolata: ['"Inconsolata"', "monospace"],
         source: ['"Source Code Pro"', "monospace"],
       },
+      backgroundImage: {
+        "hero-pattern": "url('/public/image/background.png')",
+      },
     },
   },
   variants: {

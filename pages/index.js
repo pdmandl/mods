@@ -15,20 +15,19 @@ export default function Home({ trendingResults, followResults, providers }) {
   if (!session) return <Login providers={providers} />;
 
   return (
-    <div className="">
+    <div className="bg-[url('./background.png')] ">
       <Head>
         <title>Home / Mods</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white min-h-screen flex max-w-[1500px] mx-auto">
+      <main className="min-h-screen flex max-w-[1500px] mx-auto">
         <Sidebar />
         <Feed />
         <Widgets
           trendingResults={trendingResults}
           followResults={followResults}
         />
-
         {isOpen && <Modal />}
       </main>
     </div>
